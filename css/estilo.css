@@ -1,0 +1,123 @@
+html, body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden; 
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+h1, h2 {
+    color: #003366;
+}
+
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.164);
+}
+
+
+.abertura {
+    padding: 50px;
+    background-color: #003366;
+    color: rgb(0, 0, 0);
+}
+
+
+.text-section {
+    padding: 50px;
+    background-color: #383838ab;
+    color: rgb(0, 0, 0);
+}
+
+.text-section2 {
+    padding: 5px;
+    color: rgb(0, 0, 0);
+}
+
+
+.Footer.Contato {
+    background-color: #000000; 
+    padding: 20px 0; 
+    text-align: center; 
+    color: rgb(255, 255, 255); 
+}
+
+.Footer.Contato .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.Footer.Contato h5 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.contato-info {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contato-info p {
+    margin: 0;
+    font-size: 16px;
+    color: white;
+}
+
+
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.dark-mode h1, 
+.dark-mode h2 {
+    color: #ffa600;
+}
+
+.dark-mode .card {
+    background-color: #000000b4;
+    color: #ffffff;
+    box-shadow: 0 2px 12px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .Footer.Contato {
+    background-color: #000000;
+    color: white;
+}
+
+.dark-mode .Footer.Contato h5,
+.dark-mode .contato-info p {
+    color: white;
+}
+
+.dark-mode .navbar {
+    background-color: #333;
+}
+
+.dark-mode .abertura {
+    background-color: #262626;
+    color: #ffffff;
+}
+
+.dark-mode .text-section {
+    background-color: #444;
+    color: white;
+}
+
+.dark-mode .text-section2 {
+    color: white;
+}
+
+.dark-mode .text-muted {
+    color: #cccccc !important; 
+}

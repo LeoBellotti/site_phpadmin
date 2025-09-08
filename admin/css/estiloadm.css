@@ -1,0 +1,266 @@
+
+:root {
+    --body-bg-light: #f0f2f5;
+    --card-bg-light: #ffffff;
+    --text-color-light: #343a40;
+    --heading-color-light: #212529;
+    --border-color-light: transparent;
+    --shadow-color-light: rgba(0, 0, 0, 0.1);
+
+    
+    --button-primary-bg-light: #28a745;
+    --button-primary-hover-bg-light: #218838;
+
+    --btn-info-bg-light: #17a2b8;
+    --btn-info-hover-bg-light: #138496;
+    --btn-warning-bg-light: #ffc107;
+    --btn-warning-hover-bg-light: #e0a800;
+    --btn-danger-bg-light: #dc3545;
+    --btn-danger-hover-bg-light: #c82333;
+
+    --button-secondary-bg-light: #6c757d;
+    --button-secondary-hover-bg-light: #5a6268;
+}
+
+body.dark-mode {
+    --body-bg-light: #1A1A1A;
+    --card-bg-light: #2C2C2C;
+    --text-color-light: #E0E0E0;
+    --heading-color-light: #F8F8F8;
+    --border-color-light: transparent;
+    --shadow-color-light: rgba(0, 0, 0, 0.3);
+
+    --button-primary-bg-light: #00bcd4;
+    --button-primary-hover-bg-light: #00a4b7;
+
+    --btn-info-bg-light: #00bcd4;
+    --btn-info-hover-bg-light: #00a4b7;
+    --btn-warning-bg-light: #FFD700;
+    --btn-warning-hover-bg-light: #E0C000;
+    --btn-danger-bg-light: #EF5350;
+    --btn-danger-hover-bg-light: #D32F2F;
+
+    --button-secondary-bg-light: #495057;
+    --button-secondary-hover-bg-light: #3a4046;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--body-bg-light);
+    color: var(--text-color-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding-bottom: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1 {
+    color: var(--heading-color-light);
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+.btn-success {
+    background-color: var(--button-primary-bg-light);
+    border-color: var(--button-primary-bg-light);
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-success:hover {
+    background-color: var(--button-primary-hover-bg-light);
+    border-color: var(--button-primary-hover-bg-light);
+    color: #ffffff;
+}
+
+.user-cards-grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 20px;
+    margin-top: 30px;
+}
+
+.user-item-card {
+    background-color: var(--card-bg-light);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px var(--shadow-color-light);
+    padding: 25px;
+    flex: 1 1 calc(33.33% - 25px);
+    max-width: 400px;
+    min-width: 300px;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+}
+
+.user-item-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px var(--shadow-color-light);
+}
+
+.user-item-card h2.user-name {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--heading-color-light);
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.user-item-card p {
+    margin-bottom: 6px;
+    font-size: 1.05rem;
+    color: var(--text-color-light);
+}
+
+.user-item-card p strong {
+    font-weight: 500;
+    color: var(--text-color-light);
+    margin-right: 5px;
+}
+
+
+
+
+
+
+.user-item-card .actions {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.user-item-card .actions .btn {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    margin: 0;
+    flex-grow: 1;
+    max-width: 150px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+}
+
+.user-item-card .actions .btn:hover {
+    transform: translateY(-2px);
+}
+
+.user-item-card .actions .btn-info {
+    background-color: var(--btn-info-bg-light);
+    border-color: var(--btn-info-bg-light);
+    color: #ffffff;
+}
+.user-item-card .actions .btn-info:hover {
+    background-color: var(--btn-info-hover-bg-light);
+    border-color: var(--btn-info-hover-bg-light);
+}
+
+.user-item-card .actions .btn-warning {
+    background-color: var(--btn-warning-bg-light);
+    border-color: var(--btn-warning-bg-light);
+    color: #212529;
+}
+body.dark-mode .user-item-card .actions .btn-warning {
+    color: var(--text-color-light);
+}
+.user-item-card .actions .btn-warning:hover {
+    background-color: var(--btn-warning-hover-bg-light);
+    border-color: var(--btn-warning-hover-bg-light);
+}
+
+.user-item-card .actions .btn-danger {
+    background-color: var(--btn-danger-bg-light);
+    border-color: var(--btn-danger-bg-light);
+    color: #ffffff;
+}
+.user-item-card .actions .btn-danger:hover {
+    background-color: var(--btn-danger-hover-bg-light);
+    border-color: var(--btn-danger-hover-bg-light);
+}
+
+.btn-toggle-mode {
+    background-color: var(--button-secondary-bg-light);
+    border-color: var(--button-secondary-bg-light);
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.4rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-toggle-mode:hover {
+    background-color: var(--button-secondary-hover-bg-light);
+    border-color: var(--button-secondary-hover-bg-light);
+    color: #ffffff;
+}
+
+@media (max-width: 1200px) {
+    .user-cards-grid-container {
+        gap: 20px;
+        padding: 0 15px;
+    }
+    .user-item-card {
+        flex: 1 1 calc(50% - 20px);
+        max-width: 450px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+    .btn-success {
+        width: 100%;
+        padding: 0.6rem 1rem;
+        font-size: 1rem;
+    }
+    .user-cards-grid-container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 10px;
+    }
+    .user-item-card {
+        width: 100%;
+        max-width: none;
+        flex: 1 1 auto;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        padding: 20px;
+    }
+    .user-item-card h2.user-name {
+        font-size: 1.5rem;
+    }
+    .user-item-card p {
+        font-size: 0.95rem;
+    }
+    .user-item-card .actions .btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.85rem;
+    }
+    
+}
